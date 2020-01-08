@@ -219,6 +219,7 @@ body{
     text-transform: uppercase;
     color: #F7654A;
     padding-bottom: 2.6rem;
+    cursor: pointer;
 }
 
 .question p{
