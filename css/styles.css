@@ -130,6 +130,7 @@ body{
 
 .build_info{
     color: #999999;
+    font-size: 1rem;
 }
 
 .request{
@@ -162,10 +163,6 @@ body{
 
 .request_button{
     margin-right: calc(2% + var(--elem_margin));
-}
-
-.request_button img{
-    width: 15%;
 }
 
 .request_button button{
@@ -209,7 +206,12 @@ body{
 }
 
 .photo{
+    min-width: 25%;
     max-width: 25%;
+}
+
+.photo img{
+    width: 100%;
 }
 
 .faq{
@@ -283,10 +285,6 @@ body{
 
 .quote{
     padding: 2rem 0 1rem 2rem;
-}
-
-.quote img{
-    width: 10%;
 }
 
 .reviews_text{
@@ -373,6 +371,20 @@ content: ", ";
     border-left:8px solid #F7654A;
 }
 
+@media (max-width: 1360px){
+    .partner_items{
+        justify-content: space-between;
+    }
+
+    .partner_item{
+        min-width: 35%;
+    }
+
+    .partner_item img{
+        width: 100%;
+    }
+}
+
 @media (max-width: 1280px) {
     body{
         font-size: 12px;
@@ -393,8 +405,6 @@ content: ", ";
     .work_name{
         font-size: 1.2rem;
     }
-
-
 }
 
 @media (max-width: 1039px) {
@@ -433,7 +443,7 @@ content: ", ";
     }
 
     .item{
-        width: 45%;
+        max-width: 25%;
     }
 
     .work_item{
@@ -461,10 +471,12 @@ content: ", ";
     .info{
         flex-wrap: wrap;
         top: 300px;
+        justify-content: center;
     }
 
     .item{
-        padding: 1rem;
+        min-width: 45%;
+        padding: 0.5rem;
     }
 
     :root{
@@ -489,20 +501,69 @@ content: ", ";
     }
 
     .build__item {
-        max-width: 80%;
+        min-width: 80%;
         padding: 20px 0;
+    }
+
+    .build_foto img{
+        width: 100%;
     }
 
     .work_name{
         font-size: 1rem;
     }
 
+    .request_button p{
+        font-size: 1rem;
+    }
+
+    .reviews_block{
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 520px) {
+    .request{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .request .text{
+        margin: 0;
+    }
+
+    .request_button{
+        margin: 0;
+    }
+
+    .text{
+        text-align: center;
+        margin: 0;
+        padding: 0 0 1rem;
+    }
+
     .partner_items{
         justify-content: center;
     }
 
-    .request_button p{
-        font-size: 1rem;
+    .name{
+        margin: 0;
+    }
+
+    .company_name{
+        margin: 0;
+    }
+
+    .foo_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .foo_info p{
+        text-align: center;
     }
 }
 
@@ -523,25 +584,36 @@ content: ", ";
         font-size: 1rem;
     }
 
-    .request{
-        display: flex;
+    .work_items{
+        justify-content: center;
+    }
+
+    .work_item{
+        min-width: 90%;
+    }
+
+    .question{
+        font-size: 1rem;
+    }
+
+    .reviews_block{
+        max-width: 95%;
+    }
+
+    .main_block{
         flex-direction: column;
         justify-content: center;
-        height: 200px;
     }
 
-    .request_button{
-        margin: 0;
+    .main_block .item{
+        min-width: 95%;
     }
+}
 
-
-
-    .text{
-        text-align: center;
-        margin: 0;
-        padding: 0 0 1rem;
+@media (max-width: 330px){
+    .question{
+        font-size: 0.7rem;
     }
-
 }
 
 
