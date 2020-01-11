@@ -20,6 +20,7 @@ body{
     background-size: cover;
 }
 
+
 .main_line{
     display: flex;
     justify-content: space-between;
@@ -51,7 +52,6 @@ body{
 
 .info{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     background-color: #F7F7F7;
     width: calc(100% - var(--elem_margin)*2);
@@ -162,6 +162,10 @@ body{
 
 .request_button{
     margin-right: calc(2% + var(--elem_margin));
+}
+
+.request_button img{
+    width: 15%;
 }
 
 .request_button button{
@@ -281,6 +285,10 @@ body{
     padding: 2rem 0 1rem 2rem;
 }
 
+.quote img{
+    width: 10%;
+}
+
 .reviews_text{
     padding: 0 2rem 2rem;
     color: #999999;
@@ -365,7 +373,7 @@ content: ", ";
     border-left:8px solid #F7654A;
 }
 
-@media (min-width: 1039px) and (max-width: 1280px) {
+@media (max-width: 1280px) {
     body{
         font-size: 12px;
     }
@@ -385,6 +393,8 @@ content: ", ";
     .work_name{
         font-size: 1.2rem;
     }
+
+
 }
 
 @media (max-width: 1039px) {
@@ -399,11 +409,11 @@ content: ", ";
     }
 
     .big_text{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .small_text{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .request_button{
@@ -431,9 +441,30 @@ content: ", ";
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 780px) {
+    :root{
+        --elem_margin: 5%;
+    }
+
     body {
         font-size: 8px;
+    }
+
+    .header{
+        height: 380px;
+    }
+
+    .title{
+        font-size: 1.6rem;
+    }
+
+    .info{
+        flex-wrap: wrap;
+        top: 300px;
+    }
+
+    .item{
+        padding: 1rem;
     }
 
     :root{
@@ -458,7 +489,7 @@ content: ", ";
     }
 
     .build__item {
-        max-width: 60%;
+        max-width: 80%;
         padding: 20px 0;
     }
 
@@ -469,6 +500,48 @@ content: ", ";
     .partner_items{
         justify-content: center;
     }
+
+    .request_button p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px){
+    .body{
+        font-size: 8px;
+    }
+
+    .number{
+        font-size: 1.8rem;
+    }
+
+    .edge{
+        font-size: 1.5rem;
+    }
+
+    .action{
+        font-size: 1rem;
+    }
+
+    .request{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .request_button{
+        margin: 0;
+    }
+
+
+
+    .text{
+        text-align: center;
+        margin: 0;
+        padding: 0 0 1rem;
+    }
+
 }
 
 
